@@ -1,4 +1,4 @@
-# codemap (working title)
+# codemap
 
 A local tool that helps you understand your own Next.js (App Router) codebase:
 where things are defined, who uses them, and how requests flow through the app.
