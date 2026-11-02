@@ -1,0 +1,6 @@
+{
+  // create-next-app writes JSONC
+  "compilerOptions": {
+    "paths": { "@/*": ["./*"], },
+  },
+}

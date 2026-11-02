@@ -1,0 +1,21 @@
+[package]
+name = "codemap-cli"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[lib]
+name = "codemap_cli"
+path = "src/lib.rs"
+
+[[bin]]
+name = "codemap"
+path = "src/main.rs"
+
+[dependencies]
+anyhow.workspace = true
+clap.workspace = true
+ignore.workspace = true
+codemap-core.workspace = true
+codemap-parse.workspace = true
+codemap-nextjs.workspace = true

@@ -1,0 +1,8 @@
+[package]
+name = "codemap-nextjs"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+codemap-core.workspace = true

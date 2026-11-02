@@ -1,0 +1,27 @@
+[workspace]
+resolver = "2"
+members = ["crates/core", "crates/parse", "crates/nextjs", "crates/cli"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+rust-version = "1.75"
+
+[workspace.dependencies]
+anyhow = "1"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+rusqlite = { version = "0.31", features = ["bundled"] }
+tree-sitter = "0.22"
+tree-sitter-typescript = "0.21"
+clap = { version = "4.4", features = ["derive"] }
+ignore = "0.4"
+tempfile = "3"
+
+codemap-core = { path = "crates/core" }
+codemap-parse = { path = "crates/parse" }
+codemap-nextjs = { path = "crates/nextjs" }
+
+[workspace.lints.clippy]
+all = "warn"
